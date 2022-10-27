@@ -1,0 +1,14 @@
+def reverse(k1): 
+    if k1%10==0:
+        while k1%10==0:
+         k1=k1//10
+    if k1<0:
+     k1=abs(k1)
+     k2=str(k1)[::-1]
+     return '-'+k2 
+     
+    else:
+        k2=str(k1)[::-1]
+        return k2
+k1=int(input())
+print (reverse(k1))
